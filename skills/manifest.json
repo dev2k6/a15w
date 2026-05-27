@@ -1,0 +1,42 @@
+{
+  "name": "a15w",
+  "version": "1.0.0",
+  "description": "Production-grade skill arsenal for AI coding agents",
+  "skills": [
+    {
+      "name": "code_review_pipeline",
+      "path": "code_review_pipeline",
+      "description": "8-stage ordered code review with hallucination detection"
+    },
+    {
+      "name": "security_audit",
+      "path": "security_audit",
+      "description": "10-stage critical-first security vulnerability audit"
+    },
+    {
+      "name": "test_generation",
+      "path": "test_generation",
+      "description": "8-stage comprehensive test generation with edge cases"
+    },
+    {
+      "name": "refactor_safety",
+      "path": "refactor_safety",
+      "description": "8-stage behavioral equivalence validation for refactors"
+    },
+    {
+      "name": "dependency_audit",
+      "path": "dependency_audit",
+      "description": "8-stage supply chain security and license compliance"
+    },
+    {
+      "name": "api_contract_validation",
+      "path": "api_contract_validation",
+      "description": "9-stage OpenAPI/Swagger specification compliance"
+    },
+    {
+      "name": "performance_profiling",
+      "path": "performance_profiling",
+      "description": "10-stage performance bottleneck identification"
+    }
+  ]
+}
