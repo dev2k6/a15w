@@ -25,6 +25,7 @@ Location: ${path.join(__dirname, '..', 'skills')}
 
 For AI agents: Read AGENT.md
 For humans: Read README.md
+For skills CLI: Use skills/ directory
 
 Repository: ${manifest.repository.url}
 `);

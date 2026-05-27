@@ -145,16 +145,26 @@ Or invoke directly via manifest configuration in `manifest.json`.
 a15w/
 ├── AGENT.md              # AI agent usage protocol (read this first)
 ├── README.md             # Human-facing documentation (you are here)
-├── manifest.json         # Skill registration with triggers & metadata
+├── manifest.json         # Skill registration (Trae/Claude format)
+├── package.json          # npm package metadata
+├── bin/a15w.js           # npm CLI entry point
 ├── .gitignore            # Version control exclusions
-└── skills/
-    ├── code_review_pipeline.md      # Core: 8-stage code review
-    ├── security_audit.md            # 10-stage security audit
-    ├── test_generation.md           # 8-stage test generation
-    ├── refactor_safety.md           # 8-stage refactor validation
-    ├── dependency_audit.md          # 8-stage supply chain audit
-    ├── api_contract_validation.md   # 9-stage API spec validation
-    └── performance_profiling.md     # 10-stage performance analysis
+└── skills/               # Skills CLI compatible format (SKILL.md)
+    ├── manifest.json     # Skills CLI registry
+    ├── code_review_pipeline/
+    │   └── SKILL.md      # With YAML frontmatter
+    ├── security_audit/
+    │   └── SKILL.md
+    ├── test_generation/
+    │   └── SKILL.md
+    ├── refactor_safety/
+    │   └── SKILL.md
+    ├── dependency_audit/
+    │   └── SKILL.md
+    ├── api_contract_validation/
+    │   └── SKILL.md
+    └── performance_profiling/
+        └── SKILL.md
 ```
 
 ---

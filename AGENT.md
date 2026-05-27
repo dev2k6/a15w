@@ -250,16 +250,14 @@ a15w/
 ├── AGENT.md              # This file (agent usage guide)
 ├── README.md             # Human-facing documentation
 ├── manifest.json         # Skill registration
-├── .gitignore            # Version control exclusions
-└── skills/
-    ├── code_review_pipeline.md
-    ├── security_audit.md
-    ├── test_generation.md
-    ├── refactor_safety.md
-    ├── dependency_audit.md
-    ├── api_contract_validation.md
-    └── performance_profiling.md
+├── skills/               # Skills in SKILL.md format (CLI compatible)
+│   ├── manifest.json
+│   ├── code_review_pipeline/
+│   │   └── SKILL.md
+│   └── ... (7 skill directories)
 ```
+
+**Note:** `skills/` directory uses SKILL.md format, compatible with both Trae/Claude and `npx skills` CLI.
 
 ---
 
