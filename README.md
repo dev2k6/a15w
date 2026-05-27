@@ -111,6 +111,43 @@ Profile before optimizing. The bottleneck is never where intuition suggests. Dat
 
 ---
 
+## 📥 Installation
+
+### Via npm (Recommended)
+
+```bash
+# Run CLI to view package info
+npx a15w
+
+# Or install globally
+npm install -g a15w
+```
+
+After npm install, skills are available at:
+- `node_modules/a15w/skills/` — SKILL.md format for `npx skill` CLI
+- `node_modules/a15w/manifest.json` — For Trae IDE / Claude Code integration
+
+### Via Git Clone
+
+```bash
+git clone https://github.com/dev2k6/a15w.git
+cd a15w
+```
+
+Then configure your AI agent to use:
+- `manifest.json` at root for Trae IDE / Claude Code
+- `skills/` directory for `npx skill` CLI
+
+### Via skill CLI
+
+```bash
+npx skill add https://github.com/dev2k6/a15w.git --skill
+```
+
+This clones the repository and registers all 7 skills automatically.
+
+---
+
 ## 📦 Usage
 
 ### For AI Agents

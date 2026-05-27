@@ -117,7 +117,7 @@
   "installation_methods": {
     "trae_ide": "Use manifest.json at root with skills/ directory (flat-file format)",
     "claude_code": "Use manifest.json at root with skills/ directory (flat-file format)",
-    "npm_skills_cli": "Use skills/ directory with SKILL.md format (already compatible)",
+    "npm_skill_cli": "Use skills/ directory with SKILL.md format (already compatible)",
     "npx": "npm install -g a15w && npx a15w"
   }
 }
