@@ -24,7 +24,7 @@
   "homepage": "https://github.com/dev2k6/a15w",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dev2k6/a15w.git"
+    "url": "git+https://github.com/dev2k6/a15w.git"
   },
   "bugs": {
     "url": "https://github.com/dev2k6/a15w/issues"
