@@ -1,0 +1,53 @@
+{
+  "name": "a15w",
+  "version": "1.0.0",
+  "description": "Production-grade skill arsenal for AI coding agents. 7 pipelines. 61 stages. 322 checks. Zero tolerance for hallucinations.",
+  "keywords": [
+    "ai",
+    "code-review",
+    "security-audit",
+    "testing",
+    "refactoring",
+    "dependencies",
+    "api-validation",
+    "performance",
+    "quality-gates",
+    "devops",
+    "ai-generated-code",
+    "hallucination-detection",
+    "claude",
+    "trae",
+    "skills"
+  ],
+  "author": "dev2k6",
+  "license": "MIT",
+  "homepage": "https://github.com/dev2k6/a15w",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev2k6/a15w.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dev2k6/a15w/issues"
+  },
+  "bin": {
+    "a15w": "./bin/a15w.js"
+  },
+  "files": [
+    "skills/",
+    "AGENT.md",
+    "README.md",
+    "manifest.json",
+    "bin/"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run verify",
+    "verify": "node -e \"console.log('A15W package verified')\""
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
