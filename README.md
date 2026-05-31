@@ -212,13 +212,13 @@ a15w/
 |--------|-------|
 | Total Skills | 7 |
 | Total Pipeline Stages | 61 |
-| Total Validation Checks | 322 |
+| Total Validation Checks | 349 |
 | Average Stages per Skill | 8.7 |
 | Code Review Stages | 8 |
 | Security Audit Stages | 10 |
 | Performance Profiling Stages | 10 |
 
-**322 automated checks standing between you and production bugs.**
+**349 automated checks standing between you and production bugs.**
 
 ---
 

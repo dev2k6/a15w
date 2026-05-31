@@ -2,7 +2,7 @@
   "name": "a15w",
   "full_name": "AI Agent Code Review",
   "version": "1.0.1",
-  "description": "The definitive skill extension pack for AI coding agents. 7 specialized pipelines. 61 stages. 322 validation checks. Zero tolerance for hallucinations. Maximum code quality velocity.",
+  "description": "The definitive skill extension pack for AI coding agents. 7 specialized pipelines. 61 stages. 349 validation checks. Zero tolerance for hallucinations. Maximum code quality velocity.",
   "tagline": "A15W = AI Agent Code Review",
   "author": "dev2k6",
   "license": "MIT",
@@ -24,7 +24,7 @@
   "skills": [
     {
       "name": "code_review_pipeline",
-      "file": "skills/code_review_pipeline.md",
+      "file": "skills/code_review_pipeline/SKILL.md",
       "description": "CORE SKILL. 8-stage ordered review pipeline. Evaluates AI-generated code from macro-architecture to micro-syntax. Catches hallucinations, verifies dependencies exist, checks edge cases, audits database patterns, enforces security, validates against prompt constraints. Aborts on critical failures.",
       "triggers": ["code review", "PR review", "pull request", "merge check", "before merging", "review this"],
       "category": "quality",
@@ -32,7 +32,7 @@
     },
     {
       "name": "security_audit",
-      "file": "skills/security_audit.md",
+      "file": "skills/security_audit/SKILL.md",
       "description": "10-stage critical-first security audit. Hardcoded secrets, injection flaws, auth bypass, XSS, crypto weaknesses, data exposure, dependency CVEs, misconfigurations. Stops immediately on FATAL issues. Production secrets = pipeline abort.",
       "triggers": ["security audit", "vulnerability scan", "security check", "before deploy", "penetration test", "security review"],
       "category": "security",
@@ -40,7 +40,7 @@
     },
     {
       "name": "test_generation",
-      "file": "skills/test_generation.md",
+      "file": "skills/test_generation/SKILL.md",
       "description": "8-stage comprehensive test generation. Edge cases, error paths, integration scenarios, property-based invariants. Real tests that assert actual behavior. Rejects trivial mocks like expect(true).toBe(true).",
       "triggers": ["write tests", "test coverage", "generate tests", "TDD", "unit tests", "integration tests"],
       "category": "testing",
@@ -48,7 +48,7 @@
     },
     {
       "name": "refactor_safety",
-      "file": "skills/refactor_safety.md",
+      "file": "skills/refactor_safety/SKILL.md",
       "description": "8-stage behavioral equivalence validation. Refactored code must produce identical outputs, side effects, and error conditions. Same database writes, same API calls, same exceptions. Refactoring must not change observable behavior.",
       "triggers": ["refactor", "code cleanup", "restructure", "optimize structure", "is this safe", "refactoring check"],
       "category": "quality",
@@ -56,7 +56,7 @@
     },
     {
       "name": "dependency_audit",
-      "file": "skills/dependency_audit.md",
+      "file": "skills/dependency_audit/SKILL.md",
       "description": "8-stage supply chain security audit. CVEs, license conflicts, abandoned packages, duplicate dependencies, bundle size impact, update risk assessment. Know what's in your node_modules before attackers do.",
       "triggers": ["dependencies", "npm audit", "package check", "vulnerable packages", "license compliance", "dependency check"],
       "category": "security",
@@ -64,7 +64,7 @@
     },
     {
       "name": "api_contract_validation",
-      "file": "skills/api_contract_validation.md",
+      "file": "skills/api_contract_validation/SKILL.md",
       "description": "9-stage OpenAPI/Swagger compliance validator. Every endpoint, method, status code, request schema, response schema, error response, authentication flow. Spec fidelity enforced. No undocumented behavior allowed.",
       "triggers": ["API validation", "OpenAPI", "Swagger", "contract test", "API spec", "API contract"],
       "category": "quality",
@@ -72,7 +72,7 @@
     },
     {
       "name": "performance_profiling",
-      "file": "skills/performance_profiling.md",
+      "file": "skills/performance_profiling/SKILL.md",
       "description": "10-stage bottleneck identification. N+1 queries, memory leaks, blocking I/O, hot paths, GC pressure, concurrency issues, database performance, caching analysis. Measure first, optimize second. Quantify before you optimize.",
       "triggers": ["performance", "slow", "optimize", "bottleneck", "scale", "latency", "profiling"],
       "category": "performance",
@@ -89,7 +89,7 @@
   "stats": {
     "total_skills": 7,
     "total_stages": 61,
-    "total_checks": 322,
+    "total_checks": 349,
     "avg_stages_per_skill": 8.7,
     "core_skill_stages": 8,
     "security_skill_stages": 18,

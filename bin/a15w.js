@@ -18,8 +18,8 @@ console.log(`
 ╚════════════════════════════════════════════════════════════╝
 
 Skills: ${manifest.skills.length}
-Stages: 61
-Checks: 322
+Stages: ${manifest.stats.total_stages}
+Checks: ${manifest.stats.total_checks}
 
 Location: ${path.join(__dirname, '..', 'skills')}
 

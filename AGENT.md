@@ -20,13 +20,13 @@ When user mentions these phrases, **immediately activate** the corresponding ski
 
 | User Phrase | Skill to Activate | File |
 |-------------|-------------------|------|
-| "review this code", "code review", "PR review", "pull request review", "before merging" | `code_review_pipeline` | `skills/code_review_pipeline.md` |
-| "security audit", "vulnerability scan", "security check", "before deploy", "penetration test" | `security_audit` | `skills/security_audit.md` |
-| "write tests", "generate tests", "add tests", "test coverage", "TDD" | `test_generation` | `skills/test_generation.md` |
-| "refactor", "is this safe", "refactoring check", "code cleanup", "restructure" | `refactor_safety` | `skills/refactor_safety.md` |
-| "check dependencies", "npm audit", "package vulnerabilities", "license compliance" | `dependency_audit` | `skills/dependency_audit.md` |
-| "validate API", "OpenAPI check", "Swagger validation", "contract test", "API spec" | `api_contract_validation` | `skills/api_contract_validation.md` |
-| "performance", "why is this slow", "optimize", "bottleneck", "profiling" | `performance_profiling` | `skills/performance_profiling.md` |
+| "review this code", "code review", "PR review", "pull request review", "before merging" | `code_review_pipeline` | `skills/code_review_pipeline/SKILL.md` |
+| "security audit", "vulnerability scan", "security check", "before deploy", "penetration test" | `security_audit` | `skills/security_audit/SKILL.md` |
+| "write tests", "generate tests", "add tests", "test coverage", "TDD" | `test_generation` | `skills/test_generation/SKILL.md` |
+| "refactor", "is this safe", "refactoring check", "code cleanup", "restructure" | `refactor_safety` | `skills/refactor_safety/SKILL.md` |
+| "check dependencies", "npm audit", "package vulnerabilities", "license compliance" | `dependency_audit` | `skills/dependency_audit/SKILL.md` |
+| "validate API", "OpenAPI check", "Swagger validation", "contract test", "API spec" | `api_contract_validation` | `skills/api_contract_validation/SKILL.md` |
+| "performance", "why is this slow", "optimize", "bottleneck", "profiling" | `performance_profiling` | `skills/performance_profiling/SKILL.md` |
 
 ---
 
@@ -34,12 +34,12 @@ When user mentions these phrases, **immediately activate** the corresponding ski
 
 ### 1. Load Skill File
 
-Before executing any skill, **read the full skill file** from `skills/<skill-name>.md`.
+Before executing any skill, **read the full skill file** from `skills/<skill-name>/SKILL.md`.
 
 Example:
 ```
 User: "review this code for me"
-Agent: Reads `skills/code_review_pipeline.md` completely
+Agent: Reads `skills/code_review_pipeline/SKILL.md` completely
 ```
 
 ### 2. Follow Pipeline Order Strictly
@@ -78,6 +78,8 @@ Example valid output:
 [PASS] - INJECTION_REVIEW: All inputs properly sanitized.
 [WARN] - CONFIGURATION_REVIEW: CORS allows wildcard origin. Restrict in production.
 ```
+
+**Severity vocabulary:** Each skill defines a `📊 Severity Legend` at the top of its `SKILL.md`. The common verdicts are `FATAL` (stop now), `FAIL` (must fix), `WARN` (should fix), `PASS` (verified), and `N/A` (doesn't apply). Some skills use domain-specific verdicts (e.g., refactor_safety uses `SAFE/RISK/UNSAFE`, test_generation uses `STRONG/WEAK/MISSING`). Always read the skill's legend before reporting, and never mark `PASS` from assumption — only after a real verification.
 
 ---
 
